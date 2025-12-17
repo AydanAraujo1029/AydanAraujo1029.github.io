@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aydan Araujo | CS Student</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <div class="container">
 
-<h1>Aydan Araujo</h1>
-<p>Computer Science Student at the University of Florida</p>
+    <header class="header">
+      <div>
+        <h1 class="name">Aydan Araujo</h1>
+        <p class="subtitle">Computer Science Student at the University of Florida</p>
+        <div class="links">
+          <a href="https://github.com/AydanAraujo1029" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <!-- Add LinkedIn/resume later if you want -->
+        </div>
+      </div>
+    </header>
 
-<h2>About Me</h2>
-<p>
-I’m a computer science student with a strong interest in software development
-and building projects that combine logic, problem-solving, and user interaction.
-I enjoy turning ideas into working applications and learning new technologies
-through hands-on projects rather than just coursework.
-</p>
-<p>
-My experience includes building games and educational tools using C++, Python,
-and web technologies, with a focus on clean code, object-oriented design,
-and continuously improving my technical skills.
-</p>
-  
-<h2>Projects</h2>
+    <section>
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          I’m a computer science student with a strong interest in software development
+          and building projects that combine logic, problem-solving, and user interaction.
+          I enjoy turning ideas into working applications and learning new technologies
+          through hands-on projects rather than just coursework.
+        </p>
+        <p>
+          My experience includes building games and educational tools using C++, Python,
+          and web technologies, with a focus on clean code, object-oriented design,
+          and continuously improving my technical skills.
+        </p>
+      </div>
+    </section>
 
-<h3>Minesweeper (C++)</h3>
-<p>
-A fully functional desktop version of Minesweeper built in C++ using the SFML
-graphics library. The project features object-oriented design, dynamic board
-generation, configurable game settings, and multiple windows including a game
-screen and leaderboard.
-</p>
-<p>
-This project strengthened my understanding of class design, event handling,
-file I/O, and managing game state in a larger codebase.
-</p>
-<p>
-<a href="https://github.com/AydanAraujo1029/minesweeper">View on GitHub</a>
-</p>
+    <section>
+      <h2 class="section-title">Projects</h2>
 
-  
-<h3>Sudoku Solver (Python)</h3>
-<p>
-A Python-based Sudoku solver that uses algorithmic logic to automatically solve
-valid Sudoku boards. The program applies backtracking and constraint checking to
-systematically explore solutions and ensure correctness.
-</p>
-<p>
-This project reinforced my understanding of recursion, algorithm design, and
-problem-solving, while also improving my ability to write clear and maintainable
-Python code.
-</p>
-<p>
-<a href="https://github.com/AydanAraujo1029/sudoku-solver">View on GitHub</a>
-</p>
-  
+      <div class="card">
+        <h3>Minesweeper</h3>
+        <div class="badges">
+          <span class="badge">C++</span>
+          <span class="badge">SFML</span>
+          <span class="badge">OOP</span>
+        </div>
+        <p>
+          A fully functional desktop version of Minesweeper built in C++ using SFML.
+          Features dynamic board generation, configurable settings, and multiple windows
+          including a game screen and leaderboard.
+        </p>
+        <p>
+          Strengthened my understanding of class design, event handling, file I/O, and
+          managing game state in a larger codebase.
+        </p>
+        <p>
+          <a class="cta" href="https://github.com/AydanAraujo1029/minesweeper" target="_blank" rel="noopener noreferrer">
+            View on GitHub →
+          </a>
+        </p>
+      </div>
 
+      <div class="card">
+        <h3>Sudoku Game & Solver</h3>
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">pygame</span>
+          <span class="badge">Backtracking</span>
+        </div>
+        <p>
+          A Python-based Sudoku project with interactive gameplay and solving logic.
+          Uses backtracking and constraint checking to solve valid boards.
+        </p>
+        <p>
+          Reinforced my understanding of recursion, algorithm design, and problem-solving,
+          while improving my ability to write maintainable Python code.
+        </p>
+        <p>
+          <a class="cta" href="https://github.com/AydanAraujo1029/sudoku-solver" target="_blank" rel="noopener noreferrer">
+            View on GitHub →
+          </a>
+        </p>
+      </div>
 
-<h3>School of Poker</h3>
-<p>
-An educational web-based platform designed to teach users the fundamentals of
-poker, starting with basic rules and hand rankings and expanding into strategy
-concepts. The project is built using HTML, CSS, and JavaScript and is actively
-being developed and expanded.
-</p>
-<p>
-Through this project, I am gaining experience in front-end web development,
-structuring scalable content, and designing an application with long-term growth
-in mind.
-</p>
-<p>
-<a href="https://aydanaraujo1029.github.io/school-of-poker/">View Website</a>
-</p>
+      <div class="card">
+        <h3>School of Poker</h3>
+        <div class="badges">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+        </div>
+        <p>
+          An educational web platform teaching poker fundamentals (rules, hand rankings,
+          and structured lessons), with room to expand into strategy concepts.
+        </p>
+        <p>
+          <a class="cta" href="https://aydanaraujo1029.github.io/school-of-poker/" target="_blank" rel="noopener noreferrer">
+            View Website →
+          </a>
+        </p>
+      </div>
+    </section>
 
+    <footer class="footer">
+      © <span id="year"></span> Aydan Araujo
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
